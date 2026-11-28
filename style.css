@@ -636,3 +636,49 @@ body {
     aspect-ratio: 1 / 1;
   }
 }
+/* Pengelompokan EP Diskografi */
+.ep-group {
+  margin-bottom: 56px;
+}
+
+.ep-group:last-child {
+  margin-bottom: 0;
+}
+
+.ep-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--accent);
+}
+
+.ep-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  letter-spacing: 1.5px;
+  line-height: 1.1;
+  margin-top: 4px;
+}
+
+.ep-trackcount {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+.discography-grid {
+  align-items: start;
+}
+
+@media (min-width: 901px) {
+  .single-track-grid {
+    grid-template-columns: minmax(0, 680px);
+  }
+}
